@@ -1,6 +1,8 @@
-# abyss site
+# abyss
 
-<img src="abyss.svg" alt="markdown language" width="100" height="100">
+<div align="center">
+  <img src="abyss.svg" alt="abyss logo" width="100" height="100">
+</div>
 
 A static site for the abyss theme: a preview, the palette, and a downloads grid with install steps.
 No build step and no dependencies. Plain HTML, CSS and JS.
