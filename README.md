@@ -4,28 +4,23 @@ A static site for the abyss theme: a preview, the palette, and a downloads grid 
 No build step and no dependencies. Plain HTML, CSS and JS.
 
 ```
-index.html          the page
-assets/style.css    styles
-assets/app.js       renders the preview, palette and downloads from data/site.js
-data/site.js        palette and the list of tools (edit this to add downloads)
-downloads/          every file offered for download, one folder per tool
-scripts/build-zip.sh  rebuilds downloads/abyss-all.zip
+public/index.html          the page
+public/assets/style.css    styles
+public/assets/app.js       renders the preview, palette and downloads from data/site.js
+public/data/site.js        palette and the list of tools (edit this to add downloads)
+public/downloads/          every file offered for download, one folder per tool
+scripts/build-zip.sh       rebuilds downloads/abyss-all.zip
+wrangler.jsonc             wrangler config
 ```
 
 ## Run it locally
 
 ```sh
-python3 -m http.server 8000
-# open http://localhost:8000
+npx wrangler dev
 ```
 
 Opening `index.html` straight from disk also works, except the **View** button, because browsers
 block `fetch()` on `file://` pages. Download links and everything else are fine.
-
-## Host it
-
-It is plain static files, so any static host works: GitHub Pages (a `.nojekyll` file is included),
-Netlify, Cloudflare Pages, or an S3 bucket. Publish the folder as it is.
 
 ## Add a tool (tmux, for example)
 
@@ -59,18 +54,7 @@ Netlify, Cloudflare Pages, or an S3 bucket. Publish the folder as it is.
 A new category needs adding to `"categories"` in `data/site.js`. To give it a colour, add a
 `.card[data-cat="Name"] { --cat: ... }` rule in `assets/style.css`.
 
-## Not included, on purpose
-
-Three things from the original work are left out of the public downloads because they are derived from
-other people's files, and I could not confirm their licences:
-
-- `cursor_abyss.glsl`, the Ghostty cursor trail. It is a recolour of a community shader.
-- `abyss-bar.omp.json`, an oh-my-posh theme. It is a recolour of someone else's layout.
-- The Claude Code status line script. It is a personal script rather than a theme.
-
-If you are happy with their licences, add them like any other tool and credit the originals.
-
 ## Credits
 
 The colour tokens come from the abyss theme in [daisyUI](https://daisyui.com) (MIT licence). The tool
-configs are mappings of that palette. This repo has no licence file yet. Add the one you want.
+configs are mappings of that palette.
