@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <rect width="64" height="64" rx="14" fill="#071013"/>
+  <!-- Sonar / Bathymetric Depth Lines forming 'A' -->
+  <line x1="16" y1="48" x2="48" y2="48" stroke="#102026" stroke-width="4" stroke-linecap="round"/>
+  <line x1="20" y1="41" x2="44" y2="41" stroke="#16343f" stroke-width="4" stroke-linecap="round"/>
+  <line x1="23" y1="34" x2="41" y2="34" stroke="#1f4857" stroke-width="4" stroke-linecap="round"/>
+  <line x1="26" y1="27" x2="38" y2="27" stroke="#14b8a6" stroke-width="4" stroke-linecap="round"/>
+  <line x1="29" y1="20" x2="35" y2="20" stroke="#84cc16" stroke-width="4" stroke-linecap="round"/>
+  <!-- Beacon Apex -->
+  <circle cx="32" cy="13" r="3.5" fill="#84cc16"/>
+  <!-- Vertical trench indicator line -->
+  <line x1="32" y1="20" x2="32" y2="48" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+</svg>

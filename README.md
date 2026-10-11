@@ -1,5 +1,7 @@
 # abyss site
 
+![abyss logo](abyss.svg)
+
 A static site for the abyss theme: a preview, the palette, and a downloads grid with install steps.
 No build step and no dependencies. Plain HTML, CSS and JS.
 
