@@ -198,13 +198,20 @@ window.ABYSS = {
           view: true,
           download: true,
         },
+        {
+          label: "abyss_cursor.glsl",
+          path: "downloads/ghostty/abyss_cursor.glsl",
+          view: true,
+          download: true,
+        },
       ],
       install: [
         "mkdir -p ~/.config/ghostty/themes",
-        "cp abyss ~/.config/ghostty/themes/abyss",
+        "cp abyss abyss_cursor.glsl ~/.config/ghostty/themes/abyss",
         "",
         "# then in ~/.config/ghostty/config",
         "theme = abyss",
+        "custom-shader = ~/.config/ghostty/cursor_abyss.glsl",
       ],
     },
     {
