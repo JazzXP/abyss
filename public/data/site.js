@@ -526,6 +526,32 @@ window.ABYSS = {
       ],
     },
     {
+      id: "claude",
+      name: "claude code",
+      category: "Agent",
+      description: "Sets the statusline for Claude Code",
+      files: [
+        {
+          label: "statusline.sh",
+          path: "downloads/claude/statusline.sh",
+          view: true,
+          download: true,
+        },
+      ],
+      install: [
+        "mkdir -p ~/.claude",
+        "cp statusline.sh ~/.claude/",
+        "chmod a+x ~/.claude/statusline.sh",
+        "",
+        "# in ~/.claude/settings.json",
+        `"statusLine": {
+  "type": "command",
+  "command": "bash ~/.claude/statusline.sh"
+},`,
+        "",
+      ],
+    },
+    {
       id: "obsidian",
       name: "Obsidian",
       category: "Apps",
