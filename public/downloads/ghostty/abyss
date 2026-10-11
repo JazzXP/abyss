@@ -1,0 +1,39 @@
+# abyss — deep teal-black with a lime accent
+# Install: save as ~/.config/ghostty/themes/abyss, then in your config:
+#   theme = abyss
+
+background = #00111d
+foreground = #ffd6a7
+
+cursor-color = #bdff00
+cursor-text = #00111d
+
+selection-background = #00313b
+selection-foreground = #fff2e0
+
+split-divider-color = #003843
+
+# black / bright black
+palette = 0=#00262e
+palette = 8=#234f56
+# red
+palette = 1=#f04e4f
+palette = 9=#ff6a68
+# green
+palette = 2=#01df72
+palette = 10=#4df58c
+# yellow
+palette = 3=#ffbf00
+palette = 11=#ffd21e
+# blue
+palette = 4=#00bafe
+palette = 12=#5acfff
+# magenta (secondary lavender)
+palette = 5=#cebef4
+palette = 13=#e0d1ff
+# cyan
+palette = 6=#47d6cf
+palette = 14=#7feae3
+# white / bright white
+palette = 7=#ffd6a7
+palette = 15=#fff2e0

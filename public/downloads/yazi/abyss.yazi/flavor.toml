@@ -1,0 +1,140 @@
+# abyss — yazi flavor
+#
+# Install: copy the whole `abyss.yazi` folder to ~/.config/yazi/flavors/
+# Then enable it in ~/.config/yazi/theme.toml:
+#
+#   [flavor]
+#   dark  = "abyss"
+#   light = "abyss"
+
+[mgr]
+cwd = { fg = "#47d6cf" }
+
+find_keyword  = { fg = "#bdff00", bold = true, italic = true }
+find_position = { fg = "#f383bb", bold = true, italic = true }
+
+symlink_target = { fg = "#cebef4", italic = true }
+
+marker_copied   = { fg = "#01df72", bg = "#01df72" }
+marker_cut      = { fg = "#f04e4f", bg = "#f04e4f" }
+marker_marked   = { fg = "#47d6cf", bg = "#47d6cf" }
+marker_selected = { fg = "#bdff00", bg = "#bdff00" }
+
+count_copied   = { fg = "#00111d", bg = "#01df72" }
+count_cut      = { fg = "#00111d", bg = "#f04e4f" }
+count_selected = { fg = "#00111d", bg = "#bdff00" }
+
+border_symbol = "│"
+border_style  = { fg = "#0a4a57" }
+
+[tabs]
+active   = { fg = "#00111d", bg = "#bdff00", bold = true }
+inactive = { fg = "#ffd6a7", bg = "#003843" }
+
+[mode]
+normal_main = { fg = "#00111d", bg = "#bdff00", bold = true }
+normal_alt  = { fg = "#bdff00", bg = "#003843" }
+
+select_main = { fg = "#00111d", bg = "#01df72", bold = true }
+select_alt  = { fg = "#01df72", bg = "#003843" }
+
+unset_main = { fg = "#00111d", bg = "#f383bb", bold = true }
+unset_alt  = { fg = "#f383bb", bg = "#003843" }
+
+[indicator]
+parent  = { fg = "#ffd6a7", bg = "#003843" }
+current = { fg = "#bdff00", bg = "#00313b", bold = true }
+preview = { bg = "#00313b" }
+
+[status]
+overall = { bg = "#001e29" }
+
+perm_type  = { fg = "#00bafe" }
+perm_read  = { fg = "#ffbf00" }
+perm_write = { fg = "#f04e4f" }
+perm_exec  = { fg = "#01df72" }
+perm_sep   = { fg = "#4e7a81" }
+
+progress_label  = { fg = "#fff2e0", bold = true }
+progress_normal = { fg = "#bdff00", bg = "#003843" }
+progress_error  = { fg = "#f04e4f", bg = "#003843" }
+
+[which]
+cols = 3
+mask = { bg = "#001e29" }
+cand = { fg = "#47d6cf" }
+rest = { fg = "#4e7a81" }
+desc = { fg = "#f383bb" }
+separator = "  "
+separator_style = { fg = "#4e7a81" }
+
+[confirm]
+border  = { fg = "#bdff00" }
+title   = { fg = "#bdff00" }
+body    = {}
+list    = {}
+btn_yes = { fg = "#00111d", bg = "#bdff00" }
+btn_no  = { fg = "#ffd6a7" }
+
+[spot]
+border   = { fg = "#bdff00" }
+title    = { fg = "#bdff00" }
+tbl_col  = { fg = "#47d6cf" }
+tbl_cell = { fg = "#bdff00", bg = "#00313b" }
+
+[notify]
+title_info  = { fg = "#01df72" }
+title_warn  = { fg = "#ffbf00" }
+title_error = { fg = "#f04e4f" }
+
+[pick]
+border   = { fg = "#bdff00" }
+active   = { fg = "#f383bb", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#bdff00" }
+title    = {}
+value    = {}
+selected = { bg = "#00313b" }
+
+[completion]
+border   = { fg = "#bdff00" }
+active   = { bg = "#00313b" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#bdff00" }
+title   = {}
+hovered = { fg = "#bdff00", underline = true }
+
+[help]
+on      = { fg = "#f383bb" }
+run     = { fg = "#47d6cf" }
+desc    = { fg = "#4e7a81" }
+hovered = { bg = "#00313b", bold = true }
+footer  = { fg = "#ffd6a7", bg = "#001e29" }
+
+[filetype]
+rules = [
+  # Images
+  { mime = "image/*", fg = "#47d6cf" },
+
+  # Media
+  { mime = "{audio,video}/*", fg = "#ffbf00" },
+
+  # Archives
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#f383bb" },
+
+  # Documents
+  { mime = "application/{pdf,doc,rtf}", fg = "#fb9d59" },
+
+  # Broken symlinks
+  { url = "*", is = "orphan", fg = "#f04e4f", bg = "#3a1018" },
+
+  # Executables
+  { url = "*", is = "exec", fg = "#01df72" },
+
+  # Directories
+  { url = "*/", fg = "#00bafe" },
+]

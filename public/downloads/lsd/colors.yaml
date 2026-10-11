@@ -1,0 +1,55 @@
+# abyss — lsd colours
+#
+# Install: save as ~/.config/lsd/colors.yaml, then in ~/.config/lsd/config.yaml set:
+#
+#   color:
+#     theme: custom
+#
+# This file colours the columns (permissions, size, date, git status, ...).
+# lsd takes FILE NAME colours from LS_COLORS instead: see abyss.ls_colors.sh.
+
+user: "#cebef4"
+group: "#82a6ac"
+
+permission:
+  read: "#ffbf00"
+  write: "#f04e4f"
+  exec: "#01df72"
+  exec-sticky: "#f383bb"
+  no-access: "#4e7a81"
+  octal: "#47d6cf"
+  acl: "#cebef4"
+  context: "#00bafe"
+
+date:
+  hour-old: "#bdff00"
+  day-old: "#47d6cf"
+  older: "#4e7a81"
+
+size:
+  none: "#4e7a81"
+  small: "#01df72"
+  medium: "#ffbf00"
+  large: "#fb9d59"
+
+inode:
+  valid: "#cebef4"
+  invalid: "#4e7a81"
+
+links:
+  valid: "#47d6cf"
+  invalid: "#f04e4f"
+
+tree-edge: "#4e7a81"
+
+git-status:
+  default: "#82a6ac"
+  unmodified: "#4e7a81"
+  ignored: "#4e7a81"
+  new-in-index: "#01df72"
+  new-in-workdir: "#01df72"
+  typechange: "#cebef4"
+  deleted: "#f04e4f"
+  renamed: "#47d6cf"
+  modified: "#ffbf00"
+  conflicted: "#f383bb"

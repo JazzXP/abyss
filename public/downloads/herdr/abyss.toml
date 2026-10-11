@@ -1,0 +1,41 @@
+# abyss — deep teal-black with a lime accent
+#
+# Merge this into ~/.config/herdr/config.toml (or the path in $HERDR_CONFIG_PATH),
+# replacing any existing [theme] / [theme.custom] tables, then reload with
+# `herdr server reload-config` or prefix+shift+r.
+#
+# Every colour token is overridden below, so the base theme is never visible;
+# "catppuccin" is just herdr's default dark base.
+
+[theme]
+name = "catppuccin"
+
+[theme.custom]
+# Backgrounds and surfaces
+panel_bg      = "#00111d"  # base-200: settings panel / modals
+sidebar_bg    = "#000611"  # base-300: sidebar
+active_row_bg = "#001e29"  # base-100: active Space and focused Agent row
+selection_bg  = "#003843"  # neutral: Navigate-mode cursor row
+surface0      = "#001e29"  # popups, nested panels
+surface1      = "#00313b"  # hover states
+surface_dim   = "#001823"  # subtle layering
+
+# Borders and chrome
+overlay0      = "#0a4a57"  # borders and separators
+overlay1      = "#4e7a81"  # inactive tabs, footer hints
+
+# Text
+text          = "#ffd6a7"  # base-content
+subtext0      = "#82a6ac"  # dimmed metadata and hints
+
+# Accent: selected tab, selected row, PREFIX badge
+accent        = "#bdff00"  # primary lime
+
+# Semantic colours: agent state, git counts, per-agent accents
+mauve         = "#cebef4"  # secondary lavender
+green         = "#01df72"
+yellow        = "#ffbf00"
+red           = "#f04e4f"
+blue          = "#00bafe"
+teal          = "#47d6cf"
+peach         = "#fb9d59"

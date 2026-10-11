@@ -1,0 +1,84 @@
+# abyss — btop theme
+# Install: save as ~/.config/btop/themes/abyss.theme
+# Then in btop: Esc > Options > Color theme > abyss
+# (or set `color_theme = "abyss"` in ~/.config/btop/btop.conf)
+#
+# Set `theme_background = False` in btop.conf if you would rather
+# show the terminal's own background than main_bg below.
+
+# Main background, empty for terminal default
+theme[main_bg]="#00111d"
+
+# Main text colour
+theme[main_fg]="#ffd6a7"
+
+# Title colour for boxes
+theme[title]="#fff2e0"
+
+# Highlight colour for keyboard shortcuts
+theme[hi_fg]="#bdff00"
+
+# Background and foreground colour for selected item in process list
+theme[selected_bg]="#00313b"
+theme[selected_fg]="#bdff00"
+
+# Text colour for inactive / disabled things
+theme[inactive_fg]="#4e7a81"
+
+# Colour of text appearing on top of graphs, e.g. the network speed
+theme[graph_text]="#82a6ac"
+
+# Background colour of the percentage meters
+theme[meter_bg]="#003843"
+
+# Misc colours for processes box (user, memory, cpu graph)
+theme[proc_misc]="#47d6cf"
+
+# Box outline colours
+theme[cpu_box]="#0a4a57"
+theme[mem_box]="#0a4a57"
+theme[net_box]="#0a4a57"
+theme[proc_box]="#0a4a57"
+
+# Divider line colour in boxes
+theme[div_line]="#003843"
+
+# Temperature graph: cool -> warm -> hot
+theme[temp_start]="#01df72"
+theme[temp_mid]="#ffbf00"
+theme[temp_end]="#f04e4f"
+
+# CPU graph and meters: lime -> amber -> red
+theme[cpu_start]="#bdff00"
+theme[cpu_mid]="#ffbf00"
+theme[cpu_end]="#f04e4f"
+
+# Memory: free (green)
+theme[free_start]="#0a7a45"
+theme[free_mid]="#01df72"
+theme[free_end]="#4df58c"
+
+# Memory: cached (teal)
+theme[cached_start]="#1f7a76"
+theme[cached_mid]="#47d6cf"
+theme[cached_end]="#7feae3"
+
+# Memory: available (blue)
+theme[available_start]="#0a6a8f"
+theme[available_mid]="#00bafe"
+theme[available_end]="#5acfff"
+
+# Memory: used (lavender -> pink)
+theme[used_start]="#cebef4"
+theme[used_mid]="#e0b0e0"
+theme[used_end]="#f383bb"
+
+# Network download (blue -> teal)
+theme[download_start]="#00bafe"
+theme[download_mid]="#2bc8e8"
+theme[download_end]="#47d6cf"
+
+# Network upload (orange -> pink)
+theme[upload_start]="#fb9d59"
+theme[upload_mid]="#f78b8b"
+theme[upload_end]="#f383bb"

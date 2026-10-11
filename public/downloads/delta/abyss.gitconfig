@@ -1,0 +1,75 @@
+# abyss — delta colours
+#
+# Install: save as ~/.config/git/abyss.gitconfig, then add to ~/.gitconfig:
+#
+#   [include]
+#       path = ~/.config/git/abyss.gitconfig
+#
+# This file also sets delta as your pager. Remove the [core]/[interactive]
+# blocks below if you already configure that yourself.
+#
+# syntax-theme = abyss uses the bat theme (abyss.tmTheme). Run `bat cache --build`
+# after installing that theme, or delta will fall back to its default.
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = abyss
+    navigate = true
+    line-numbers = true
+
+[delta "abyss"]
+    dark = true
+    syntax-theme = abyss
+
+    # Diff backgrounds: dim tint for the line, brighter tint for the changed words
+    minus-style = syntax "#3a1018"
+    minus-non-emph-style = syntax "#3a1018"
+    minus-emph-style = syntax "#6b1c28"
+    minus-empty-line-marker-style = normal "#3a1018"
+    plus-style = syntax "#04301f"
+    plus-non-emph-style = syntax "#04301f"
+    plus-emph-style = syntax "#075a38"
+    plus-empty-line-marker-style = normal "#04301f"
+    zero-style = syntax
+
+    # Headers
+    commit-style = bold "#bdff00"
+    commit-decoration-style = "#0a4a57" box
+    file-style = bold "#bdff00"
+    file-decoration-style = "#0a4a57" ul
+    hunk-header-style = file line-number syntax
+    hunk-header-file-style = "#cebef4"
+    hunk-header-line-number-style = "#4e7a81"
+    hunk-header-decoration-style = "#0a4a57" box
+
+    # Line numbers
+    line-numbers-left-format = "{nm:>4}│"
+    line-numbers-right-format = "{np:>4}│"
+    line-numbers-minus-style = "#f04e4f"
+    line-numbers-plus-style = "#01df72"
+    line-numbers-zero-style = "#4e7a81"
+    line-numbers-left-style = "#0a4a57"
+    line-numbers-right-style = "#0a4a57"
+
+    # Merge conflicts and blame
+    merge-conflict-begin-symbol = ▼
+    merge-conflict-end-symbol = ▲
+    merge-conflict-ours-diff-header-style = bold "#ffbf00"
+    merge-conflict-theirs-diff-header-style = bold "#00bafe"
+    blame-palette = "#00111d #001823 #001e29"
+    blame-code-style = syntax
+    blame-separator-format = "│ {n:^4} │"
+    blame-separator-style = "#0a4a57"
+
+    # Grep, whitespace and misc
+    grep-match-line-style = syntax "#003843"
+    grep-match-word-style = bold "#bdff00"
+    grep-file-style = bold "#cebef4"
+    grep-line-number-style = "#4e7a81"
+    whitespace-error-style = reverse "#f04e4f"
+    inspect-raw-lines = false

@@ -1,0 +1,169 @@
+{
+  "name": "abyss",
+  "scheme": "dark",
+  "groups": [
+    {
+      "name": "Surfaces",
+      "colors": [
+        {
+          "name": "base-300",
+          "hex": "#000611",
+          "oklch": "oklch(10% 0.08 209)",
+          "role": "Darkest. Sidebars and inactive tabs."
+        },
+        {
+          "name": "base-200",
+          "hex": "#00111d",
+          "oklch": "oklch(15% 0.08 209)",
+          "role": "Main background."
+        },
+        {
+          "name": "base-100",
+          "hex": "#001e29",
+          "oklch": "oklch(20% 0.08 209)",
+          "role": "Raised surfaces, popups, status bars."
+        },
+        {
+          "name": "neutral",
+          "hex": "#003843",
+          "oklch": "oklch(30% 0.08 209)",
+          "role": "Borders and cursor rows."
+        },
+        {
+          "name": "selection",
+          "hex": "#00313b",
+          "oklch": null,
+          "role": "Selected text and hover."
+        },
+        {
+          "name": "cursorline",
+          "hex": "#001823",
+          "oklch": null,
+          "role": "Current line highlight."
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "colors": [
+        {
+          "name": "base-content",
+          "hex": "#ffd6a7",
+          "oklch": "oklch(90% 0.076 70.697)",
+          "role": "Default foreground."
+        },
+        {
+          "name": "bright",
+          "hex": "#fff2e0",
+          "oklch": null,
+          "role": "Bold text and headings."
+        },
+        {
+          "name": "dim",
+          "hex": "#82a6ac",
+          "oklch": null,
+          "role": "Operators, metadata, hints."
+        },
+        {
+          "name": "comment",
+          "hex": "#4e7a81",
+          "oklch": null,
+          "role": "Comments and line numbers."
+        }
+      ]
+    },
+    {
+      "name": "Accents",
+      "colors": [
+        {
+          "name": "primary",
+          "hex": "#bdff00",
+          "oklch": "oklch(92% 0.2653 125)",
+          "role": "Lime. Cursor, functions, active items."
+        },
+        {
+          "name": "secondary",
+          "hex": "#cebef4",
+          "oklch": "oklch(83.27% 0.0764 298.3)",
+          "role": "Lavender. Keywords and tags."
+        },
+        {
+          "name": "accent",
+          "hex": "#505050",
+          "oklch": "oklch(43% 0 0)",
+          "role": "Quiet grey."
+        }
+      ]
+    },
+    {
+      "name": "Signals",
+      "colors": [
+        {
+          "name": "info",
+          "hex": "#00bafe",
+          "oklch": "oklch(74% 0.16 232.661)",
+          "role": "Types, links, directories."
+        },
+        {
+          "name": "success",
+          "hex": "#01df72",
+          "oklch": "oklch(79% 0.209 151.711)",
+          "role": "Additions, execute bit, OK."
+        },
+        {
+          "name": "warning",
+          "hex": "#ffbf00",
+          "oklch": "oklch(84.8% 0.1962 84.62)",
+          "role": "Changes, warnings."
+        },
+        {
+          "name": "error",
+          "hex": "#f04e4f",
+          "oklch": "oklch(65% 0.1985 24.22)",
+          "role": "Deletions, errors."
+        }
+      ]
+    },
+    {
+      "name": "Extras",
+      "colors": [
+        {
+          "name": "teal",
+          "hex": "#47d6cf",
+          "oklch": null,
+          "role": "Strings and archives."
+        },
+        {
+          "name": "orange",
+          "hex": "#fb9d59",
+          "oklch": null,
+          "role": "Numbers and constants."
+        },
+        {
+          "name": "pink",
+          "hex": "#f383bb",
+          "oklch": null,
+          "role": "Escapes, imports, decorators."
+        }
+      ]
+    }
+  ],
+  "ansi": [
+    "#00262e",
+    "#f04e4f",
+    "#01df72",
+    "#ffbf00",
+    "#00bafe",
+    "#cebef4",
+    "#47d6cf",
+    "#ffd6a7",
+    "#234f56",
+    "#ff6a68",
+    "#4df58c",
+    "#ffd21e",
+    "#5acfff",
+    "#e0d1ff",
+    "#7feae3",
+    "#fff2e0"
+  ]
+}

@@ -1,12 +1,211 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Hello, World!</title>
-	</head>
-	<body>
-		<h1 id="heading">Hello, World!</h1>
-		<p>This page comes from a static asset stored at `public/index.html` as configured in `wrangler.jsonc`.</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>abyss theme</title>
+    <meta
+      name="description"
+      content="abyss is a deep teal-black theme with one lime pulse. Download ready-made configs for Ghostty, Neovim, bat, lazygit, yazi and more."
+    />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#00111d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&family=Martian+Mono:wdth,wght@75..112,100..800&display=swap"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#downloads">Skip to downloads</a>
+
+    <header class="bar">
+      <div class="wrap">
+        <a class="logo" href="#top" aria-label="abyss, back to top"
+          >abyss<i aria-hidden="true"></i
+        ></a>
+        <nav class="nav" aria-label="Sections">
+          <a href="#showcase">Preview</a>
+          <a href="#palette">Palette</a>
+          <a href="#downloads">Downloads</a>
+          <a
+            class="btn btn-primary btn-sm"
+            id="zip-top"
+            href="downloads/abyss-all.zip"
+            download
+            >Download all</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">
+            A dark theme for the terminal and the tools around it
+          </p>
+          <h1 class="mark" aria-label="abyss">
+            <span aria-hidden="true">abyss</span
+            ><span class="cursor" aria-hidden="true"></span>
+          </h1>
+          <p class="lede">
+            A deep teal-black theme with one lime pulse. Ready-made configs for
+            your terminal, editor and command-line tools, all cut from a single
+            palette.
+          </p>
+          <div class="cta">
+            <a
+              class="btn btn-primary btn-lg"
+              id="zip-hero"
+              href="downloads/abyss-all.zip"
+              download
+              >Download everything (.zip)</a
+            >
+            <a class="btn btn-lg" href="#downloads">Browse by app</a>
+          </div>
+          <p class="stats" id="stats" aria-label="Summary"></p>
+
+          <div class="showcase" id="showcase">
+            <div class="win">
+              <div class="win-bar">
+                <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div
+                  class="tabs"
+                  role="tablist"
+                  aria-label="Theme preview"
+                  id="tabs"
+                ></div>
+              </div>
+              <div
+                class="win-body"
+                id="win-body"
+                role="tabpanel"
+                tabindex="0"
+                aria-live="off"
+              ></div>
+            </div>
+            <p class="caption">
+              Rendered with the theme's own colours. Pick a tab to see another
+              tool.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="palette">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Palette</span>
+            <h2>Twenty colours, one hue</h2>
+            <p>
+              Every surface is the same teal at a different depth, so the lime
+              and lavender accents have room to stand out. Click a swatch to
+              copy its hex value.
+            </p>
+          </div>
+          <div id="swatches"></div>
+          <div class="ansi-wrap">
+            <div class="pal-group"><h3>Terminal ANSI 0&ndash;15</h3></div>
+            <div class="ansi" id="ansi"></div>
+            <div class="ansi-labels" id="ansi-labels" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="downloads">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">Downloads</span>
+            <h2>One theme, every tool</h2>
+            <p>
+              Each file is a drop-in. <strong>View</strong> shows the full
+              contents, <strong>Install</strong> lists the steps for that tool.
+            </p>
+          </div>
+          <div class="toolbar">
+            <div class="search">
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <circle cx="7" cy="7" r="4.5" />
+                <path d="M10.5 10.5 14 14" stroke-linecap="round" />
+              </svg>
+              <input
+                id="q"
+                type="search"
+                placeholder="Search tools"
+                aria-label="Search tools"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </div>
+            <div
+              class="chips"
+              id="chips"
+              role="group"
+              aria-label="Filter by category"
+            ></div>
+            <div class="result-line" id="result-line" aria-live="polite"></div>
+          </div>
+          <div class="grid" id="grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <a class="logo" href="#top">abyss<i aria-hidden="true"></i></a>
+        <p>
+          The colour tokens come from the abyss theme in
+          <a href="https://daisyui.com">daisyUI</a> (MIT licence). The tool
+          configs here are my own mappings of that palette.
+        </p>
+        <div class="links">
+          <a href="#palette">Palette</a>
+          <a href="#downloads">Downloads</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="gauge" id="gauge" aria-hidden="true">
+      <span>0 m</span>
+      <div class="track">
+        <div class="mk" id="gauge-mk">
+          <span class="rd" id="gauge-rd">0 m</span>
+        </div>
+      </div>
+      <span>10,935 m</span>
+    </div>
+
+    <dialog id="viewer" aria-labelledby="viewer-name">
+      <div class="dlg-head">
+        <code id="viewer-name"></code>
+        <div class="acts">
+          <button class="btn btn-sm" id="viewer-copy" type="button">
+            Copy
+          </button>
+          <a class="btn btn-sm" id="viewer-dl" href="#" download>Download</a>
+          <button class="btn btn-sm" id="viewer-close" type="button">
+            Close
+          </button>
+        </div>
+      </div>
+      <pre class="dlg-body" id="viewer-body" tabindex="0"></pre>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="data/site.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
 </html>

@@ -1,0 +1,47 @@
+/* abyss — colour tokens
+ * Hex values are the sRGB conversion of the daisyUI abyss theme, plus a few derived shades.
+ */
+:root {
+  /* Surfaces */
+  --abyss-base-300: #000611;
+  --abyss-base-200: #00111d;
+  --abyss-base-100: #001e29;
+  --abyss-neutral: #003843;
+  --abyss-selection: #00313b;
+  --abyss-cursorline: #001823;
+  /* Text */
+  --abyss-base-content: #ffd6a7;
+  --abyss-bright: #fff2e0;
+  --abyss-dim: #82a6ac;
+  --abyss-comment: #4e7a81;
+  /* Accents */
+  --abyss-primary: #bdff00;
+  --abyss-secondary: #cebef4;
+  --abyss-accent: #505050;
+  /* Signals */
+  --abyss-info: #00bafe;
+  --abyss-success: #01df72;
+  --abyss-warning: #ffbf00;
+  --abyss-error: #f04e4f;
+  /* Extras */
+  --abyss-teal: #47d6cf;
+  --abyss-orange: #fb9d59;
+  --abyss-pink: #f383bb;
+  /* ANSI 0-15, as set in the Ghostty theme */
+  --abyss-ansi-0: #00262e;
+  --abyss-ansi-1: #f04e4f;
+  --abyss-ansi-2: #01df72;
+  --abyss-ansi-3: #ffbf00;
+  --abyss-ansi-4: #00bafe;
+  --abyss-ansi-5: #cebef4;
+  --abyss-ansi-6: #47d6cf;
+  --abyss-ansi-7: #ffd6a7;
+  --abyss-ansi-8: #234f56;
+  --abyss-ansi-9: #ff6a68;
+  --abyss-ansi-10: #4df58c;
+  --abyss-ansi-11: #ffd21e;
+  --abyss-ansi-12: #5acfff;
+  --abyss-ansi-13: #e0d1ff;
+  --abyss-ansi-14: #7feae3;
+  --abyss-ansi-15: #fff2e0;
+}

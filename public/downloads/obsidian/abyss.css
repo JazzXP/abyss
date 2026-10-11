@@ -1,0 +1,116 @@
+/* abyss — Obsidian CSS snippet
+ *
+ * Install: copy to <your vault>/.obsidian/snippets/abyss.css
+ * Then: Settings > Appearance > CSS snippets > refresh, and turn "abyss" on.
+ * Set Appearance > Base color scheme to "Dark" (every rule is scoped to .theme-dark).
+ *
+ * It overrides Obsidian's colour variables only, so it layers on top of the
+ * default theme or whichever community theme you use.
+ */
+
+.theme-dark {
+  /* Base ramp, darkest to lightest */
+  --color-base-00: #000611;
+  --color-base-05: #00111d;
+  --color-base-10: #001823;
+  --color-base-20: #001e29;
+  --color-base-25: #00262e;
+  --color-base-30: #003843;
+  --color-base-35: #0a4a57;
+  --color-base-40: #234f56;
+  --color-base-50: #4e7a81;
+  --color-base-60: #82a6ac;
+  --color-base-70: #ffd6a7;
+  --color-base-100: #fff2e0;
+
+  /* Extended colours */
+  --color-red: #f04e4f;
+  --color-orange: #fb9d59;
+  --color-yellow: #ffbf00;
+  --color-green: #01df72;
+  --color-cyan: #47d6cf;
+  --color-blue: #00bafe;
+  --color-purple: #cebef4;
+  --color-pink: #f383bb;
+
+  /* Accent: primary lime */
+  --accent-h: 74;
+  --accent-s: 100%;
+  --accent-l: 50%;
+  --color-accent: #bdff00;
+  --color-accent-1: #cfff3d;
+  --color-accent-2: #a6e000;
+
+  /* Backgrounds */
+  --background-primary: #00111d;
+  --background-primary-alt: #001823;
+  --background-secondary: #000611;
+  --background-secondary-alt: #001e29;
+  --background-modifier-hover: #00313b;
+  --background-modifier-active-hover: #003843;
+  --background-modifier-border: #003843;
+  --background-modifier-border-hover: #0a4a57;
+  --background-modifier-border-focus: #bdff00;
+  --background-modifier-error: #f04e4f;
+  --background-modifier-error-hover: #ff6a68;
+  --background-modifier-success: #01df72;
+  --background-modifier-message: #00313b;
+  --background-modifier-form-field: #001e29;
+
+  /* Text */
+  --text-normal: #ffd6a7;
+  --text-muted: #82a6ac;
+  --text-faint: #4e7a81;
+  --text-accent: #bdff00;
+  --text-accent-hover: #cfff3d;
+  --text-on-accent: #00111d;
+  --text-on-accent-inverted: #fff2e0;
+  --text-success: #01df72;
+  --text-warning: #ffbf00;
+  --text-error: #f04e4f;
+  --text-selection: rgba(0, 186, 254, 0.28);
+  --text-highlight-bg: rgba(255, 191, 0, 0.28);
+  --caret-color: #bdff00;
+
+  /* Buttons and controls */
+  --interactive-normal: #001e29;
+  --interactive-hover: #003843;
+  --interactive-accent: #bdff00;
+  --interactive-accent-hover: #cfff3d;
+
+  /* Headings */
+  --h1-color: #bdff00;
+  --h2-color: #cebef4;
+  --h3-color: #47d6cf;
+  --h4-color: #00bafe;
+  --h5-color: #fb9d59;
+  --h6-color: #f383bb;
+
+  /* Inline formatting, links, tags */
+  --bold-color: #fff2e0;
+  --italic-color: #cebef4;
+  --link-color: #00bafe;
+  --link-color-hover: #5acfff;
+  --link-external-color: #00bafe;
+  --link-external-color-hover: #5acfff;
+  --link-unresolved-color: #f383bb;
+  --tag-color: #47d6cf;
+  --tag-background: rgba(71, 214, 207, 0.12);
+  --blockquote-border-color: #4e7a81;
+  --hr-color: #003843;
+  --list-marker-color: #bdff00;
+
+  /* Code blocks: same mapping as the bat and Neovim themes */
+  --code-background: #001e29;
+  --code-normal: #ffd6a7;
+  --code-comment: #4e7a81;
+  --code-function: #bdff00;
+  --code-important: #fb9d59;
+  --code-keyword: #cebef4;
+  --code-operator: #82a6ac;
+  --code-property: #ffd6a7;
+  --code-punctuation: #82a6ac;
+  --code-string: #47d6cf;
+  --code-tag: #cebef4;
+  --code-value: #fb9d59;
+}
